@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Fin Trimestre</title>
+<style>
+        #portaResponsive {
+            width: 70vh;
+            height: 70vw;
+            left: 50%;
+            right: 50%;
+            display:block;
+        }
+
+        #fotoDestiny {
+            width: 100%;
+            height: 100%;
+            display: cover;
+        }
+
+        @media all and (orientation:portrait) {
+            #portaResponsive {
+                width: 600px;
+                height: 900px;
+            }
+        }
+       
+        @media all and (orientation:landscape) {
+            #portaResponsive {
+                width: 1200px;
+                height: 800px;
+            }
+        }
+
+</style>
+</head>
+
+<body>
+
+    <picture id="portaResponsive">
+        <source media="(orientation: portrait) and (min-width:1200px)" srcset="destinyVertical.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width:1200px)" srcset="destinyVertical.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width:1200px)" srcset="destinyVertical.jpg" type="image/jpg">
+        <source media="(orientation: portrait) and (min-width:600px)" srcset="destinyVertical2.heic" type="image/heic">
+        <source media="(orientation: portrait) and (min-width:600px)" srcset="destinyVertical2.webp" type="image/webp">
+        <source media="(orientation: portrait) and (min-width:600px)" srcset="destinyVertical2.jpg" type="image/jpg">   
+        
+        <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./DestinyHorizontal.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./DestinyHorizontal.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./DestinyHorizontal.jpg" type="image/jpg">
+        <source media="(orientation: landscape) and (min-width: 800px)" srcset="./DestinyHorizontal2.heic" type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 800px)" srcset="./DestinyHorizontal2.webp" type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 800px)" srcset="./DestinyHorizontal2.jpg" type="image/jpg">
+
+        <img 
+        id="fotoDestiny1" 
+        alt="Fotos del juego Destiny 2" 
+        title="Destiny 2"           
+        src="DestinyHorizontal.webp" />
+    
+    </picture>
+
+</body>
+
+</html>
